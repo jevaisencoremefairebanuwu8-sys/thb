@@ -1,0 +1,5 @@
+{
+  "luau-lsp.sourcemap.rojoProjectFile": "default.project.json",
+  "robloxLsp.diagnostics.globals": ["vector"],
+  "robloxLsp.diagnostics.disable": ["invalid-class-name"]
+}

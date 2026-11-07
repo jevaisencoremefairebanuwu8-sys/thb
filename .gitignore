@@ -1,0 +1,11 @@
+# Rojo serve logs
+/.rojo-serve.log
+/.rojo-serve.err.log
+
+# Place files - Rojo + Studio hold the game, never a committed place
+/*.rbxl
+/*.rbxlx
+/*.rbxl.lock
+/*.rbxlx.lock
+
+sourcemap.json

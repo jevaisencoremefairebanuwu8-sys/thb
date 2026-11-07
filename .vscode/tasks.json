@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rojo serve",
+      "detail": "Syncs this folder into Studio on localhost:34873 - connect from the Rojo plugin. Starts when the folder opens.",
+      "type": "shell",
+      "command": "if (Get-NetTCPConnection -LocalPort 34873 -State Listen -ErrorAction SilentlyContinue) { 'Rojo is already serving on port 34873.' } else { rojo serve default.project.json }",
+      "options": {
+        "shell": { "executable": "powershell.exe", "args": ["-NoProfile", "-Command"] }
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": { "runOn": "folderOpen" },
+      "presentation": { "reveal": "silent", "panel": "dedicated", "showReuseMessage": false }
+    }
+  ]
+}
